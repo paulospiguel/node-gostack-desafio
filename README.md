@@ -14,9 +14,13 @@ Crie uma aplicação para armazenar repositórios no backend.
 
 ## Aprendisagem:
 
--> Conceitos de rotas e requisição verbos http (Resp);
+-> Conceitos de rotas e requisição métodos HTTP (Resp);
 <br/>
--> Manipulação de variável;
+-> Instalação de dependencias e utilização do insomnia;
+<br/>
+-> Manipulação de variável e paramentro;
+<br/>
+-> Conseito de Middlewares;
 <br/>
 -> Conhecimento de javascript;
 <br/>
