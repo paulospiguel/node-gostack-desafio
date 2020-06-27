@@ -54,9 +54,9 @@ app.put("/repositories/:id", (request, response) => {
 
   const repository = {
     id,
-    title,
-    url,
-    techs,
+    title: title ? title : repositories[repositoryIndex].title,
+    url: url ? url : repositories[repositoryIndex].url,
+    techs: techs ? techs : repositories[repositoryIndex].techs,
     likes: repositories[repositoryIndex].likes,
   };
 
@@ -100,10 +100,7 @@ app.post("/repositories/:id/like", (request, response) => {
     });
   }
 
-  repositories[repositoryIndex] = {
-    ...repositories[repositoryIndex],
-    likes: repositories[repositoryIndex].likes + 1,
-  };
+  repositories[repositoryIndex].likes += 1;
 
   return response.json(repositories[repositoryIndex]);
 });
